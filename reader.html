@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Read the ten-essay series on completed intelligibility.">
+  <title>Essay Reader — The Manifold of Completed Intelligibility</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="reader-body">
+  <a class="skip-link" href="#essay-content">Skip to essay</a>
+  <header class="site-header reader-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">54</span>
+      <span>The Manifold of Completed Intelligibility</span>
+    </a>
+    <button id="chapters-button" class="menu-button" type="button" aria-expanded="false" aria-controls="chapter-drawer">Chapters</button>
+  </header>
+
+  <div class="reader-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+
+  <aside id="chapter-drawer" class="reader-drawer" aria-label="Essay chapters">
+    <h2>Essay series</h2>
+    <ol id="chapter-list"></ol>
+  </aside>
+
+  <main class="reader-shell">
+    <div id="reader-meta" class="reader-meta">Loading essay…</div>
+    <div id="essay-content" class="reader-content" tabindex="-1">
+      <p class="loading">Loading the chapter…</p>
+    </div>
+    <p class="swipe-hint">Swipe left or right to change essays</p>
+  </main>
+
+  <nav class="reader-controls" aria-label="Essay navigation">
+    <a id="previous-essay" href="#">← Previous</a>
+    <span id="reader-position" class="reader-position">— / 10</span>
+    <a id="next-essay" href="#">Next →</a>
+  </nav>
+
+  <script src="assets/app.js"></script>
+  <script src="assets/reader.js"></script>
+</body>
+</html>
