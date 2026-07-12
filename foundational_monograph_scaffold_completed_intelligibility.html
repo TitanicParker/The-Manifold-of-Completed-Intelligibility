@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Manifold of Completed Intelligibility — Foundational Monograph Scaffold</title>
+  <meta name="description" content="A foundational philosophical monograph on the ontology, method, evidence, and historical significance of completed intelligibility.">
+  <style>
+    :root {
+      --max-width: 1040px;
+      --text: #1d1d1f;
+      --muted: #60646c;
+      --rule: #d9dce1;
+      --panel: #f5f6f8;
+      --soft: #fbfbfc;
+      --accent: #263a63;
+      --accent-2: #465b86;
+      --placeholder: #7a4f00;
+      --placeholder-bg: #fff8e8;
+      --done: #245c3d;
+      --done-bg: #eef8f2;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.72;
+    }
+
+    a { color: var(--accent); }
+
+    .page {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3rem 1.5rem 6rem;
+    }
+
+    header.hero {
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .kicker {
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.8rem;
+    }
+
+    h1, h2, h3, h4 {
+      color: var(--accent);
+      line-height: 1.22;
+    }
+
+    h1 {
+      font-size: clamp(2.7rem, 7vw, 5.2rem);
+      margin: 0 0 0.7rem;
+    }
+
+    .subtitle {
+      font-size: 1.35rem;
+      color: var(--muted);
+      margin: 0;
+      max-width: 850px;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 0.8rem;
+      margin: 1.8rem 0 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    .meta div {
+      border: 1px solid var(--rule);
+      background: var(--soft);
+      padding: 0.8rem 0.9rem;
+    }
+
+    nav.toc {
+      border: 1px solid var(--rule);
+      background: var(--panel);
+      padding: 1.2rem 1.3rem;
+      margin: 2rem 0 3rem;
+    }
+
+    nav.toc h2 {
+      margin-top: 0;
+      font-size: 1.35rem;
+    }
+
+    nav.toc ol {
+      columns: 2;
+      column-gap: 2.5rem;
+      padding-left: 1.25rem;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 760px) {
+      nav.toc ol { columns: 1; }
+    }
+
+    section {
+      margin: 3.5rem 0;
+    }
+
+    .part {
+      margin-top: 5rem;
+      padding-top: 2rem;
+      border-top: 3px solid var(--accent);
+    }
+
+    .part > header {
+      margin-bottom: 2rem;
+    }
+
+    .part-number {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--accent-2);
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.86rem;
+    }
+
+    h2 {
+      font-size: 2.15rem;
+      margin: 0.4rem 0 0.8rem;
+    }
+
+    h3 {
+      font-size: 1.55rem;
+      margin-top: 2.5rem;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+      margin-top: 1.7rem;
+    }
+
+    p { margin: 1rem 0; }
+
+    blockquote {
+      margin: 2rem 0;
+      padding: 1rem 1.25rem;
+      border-left: 4px solid var(--accent);
+      background: var(--panel);
+      font-size: 1.08rem;
+    }
+
+    figure {
+      margin: 2rem 0;
+      padding: 1.25rem;
+      background: var(--panel);
+      border: 1px solid var(--rule);
+    }
+
+    figcaption {
+      margin-top: 0.75rem;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font-family: "Courier New", Courier, monospace;
+      line-height: 1.55;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.7rem 0;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      border: 1px solid var(--rule);
+      padding: 0.72rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--panel);
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.86rem;
+    }
+
+    .chapter {
+      border-top: 1px solid var(--rule);
+      padding-top: 1.8rem;
+      margin-top: 3rem;
+    }
+
+    .chapter-label {
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-size: 0.78rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .status {
+      display: inline-block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.76rem;
+      font-weight: bold;
+      border-radius: 999px;
+      padding: 0.2rem 0.55rem;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+
+    .status.placeholder {
+      color: var(--placeholder);
+      background: var(--placeholder-bg);
+      border: 1px solid #e4c46d;
+    }
+
+    .status.seeded {
+      color: var(--done);
+      background: var(--done-bg);
+      border: 1px solid #9bc9ac;
+    }
+
+    .placeholder-box {
+      border: 1px dashed #c49739;
+      background: var(--placeholder-bg);
+      padding: 1rem 1.1rem;
+      margin: 1.25rem 0;
+    }
+
+    .placeholder-box strong {
+      color: var(--placeholder);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .seed-box {
+      border: 1px solid #9bc9ac;
+      background: var(--done-bg);
+      padding: 1rem 1.1rem;
+      margin: 1.25rem 0;
+    }
+
+    .seed-box strong {
+      color: var(--done);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .chapter-goals {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.8rem;
+      margin: 1.4rem 0;
+    }
+
+    .chapter-goals div {
+      border: 1px solid var(--rule);
+      padding: 0.85rem;
+      background: var(--soft);
+    }
+
+    .chapter-goals strong {
+      display: block;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.85rem;
+      margin-bottom: 0.25rem;
+    }
+
+    aside {
+      border: 1px solid var(--rule);
+      background: var(--soft);
+      padding: 1rem 1.1rem;
+      margin: 1.6rem 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--rule);
+      margin-top: 5rem;
+      padding-top: 2rem;
+      color: var(--muted);
+    }
+
+    .editorial {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+<main class="page">
+  <header class="hero">
+    <div class="kicker">Foundational Philosophical Monograph · Working Scaffold</div>
+    <h1>The Manifold of Completed Intelligibility</h1>
+    <p class="subtitle">A Systematic Ontology of Settlement, Survival, Inheritance, and the Finite Forms Through Which Intelligibility Becomes Complete</p>
+
+    <div class="meta">
+      <div><strong>Document type</strong><br>Foundational research monograph</div>
+      <div><strong>Intellectual form</strong><br>Systematic treatise and research programme</div>
+      <div><strong>Primary domain</strong><br>Ontology of completed intelligibility</div>
+      <div><strong>Status</strong><br>Architectural scaffold with seeded passages</div>
+    </div>
+  </header>
+
+  <section id="front-matter">
+    <h2>Front Matter</h2>
+
+    <div class="chapter">
+      <div class="chapter-label">Title Page</div>
+      <h3>Full Title and Authorial Statement <span class="status placeholder">Placeholder</span></h3>
+      <div class="placeholder-box">
+        <strong>Insert:</strong> author name, affiliation if any, version number, date, canonical subtitle, and publication status.
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-label">Abstract</div>
+      <h3>Abstract <span class="status seeded">Seeded</span></h3>
+      <div class="seed-box">
+        <strong>Seed text:</strong>
+        This monograph presents a systematic ontology of completed intelligibility. It proposes that every properly individuated completed intelligibility lands through one of fifty-four pairwise discrete event-forms generated by six work-families, three settlement orientations, and three survivor-modes. It develops a multilingual recovery method, distinguishes local settlements from traversals, and examines the theory through a dependency-ordered mathematical corpus of 615 theorems across eleven movements. The work argues that language realizes rather than exhausts a deeper field of completion, and that this field operates historically, intersubjectively, constitutively, anonymously, and generatively.
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-label">Preface</div>
+      <h3>Preface: Why This Work Exists <span class="status placeholder">Placeholder</span></h3>
+      <div class="placeholder-box">
+        <strong>Draft later:</strong> origin of the mathematical derivation, emergence of the sentence-recovery method, relation between discovery and formulation, limits of current claims, and how the reader should use the book.
+      </div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-label">Reader's Guide</div>
+      <h3>How to Read the Monograph <span class="status placeholder">Placeholder</span></h3>
+      <div class="placeholder-box">
+        <strong>Explain:</strong> which chapters establish ontology, which teach the method, which present evidence, which address implications, and how the appendices function as reference documents.
+      </div>
+    </div>
+  </section>
+
+  <nav class="toc" aria-label="Table of contents">
+    <h2>Provisional Table of Contents</h2>
+    <ol>
+      <li><a href="#part-i">Part I — The Ontological Problem</a></li>
+      <li><a href="#ch1">The Unnoticed Operation of Completion</a></li>
+      <li><a href="#ch2">The Sentence as Completed Settlement</a></li>
+      <li><a href="#ch3">X, Answering Movement, and Y</a></li>
+      <li><a href="#part-ii">Part II — The Finite Manifold</a></li>
+      <li><a href="#ch4">The Six Work-Families</a></li>
+      <li><a href="#ch5">The Three Settlement Orientations</a></li>
+      <li><a href="#ch6">The Three Survivor-Modes</a></li>
+      <li><a href="#ch7">The Fifty-Four Coordinates</a></li>
+      <li><a href="#ch8">Pairwise Discreteness and Exact-One Placement</a></li>
+      <li><a href="#part-iii">Part III — Recovery and Method</a></li>
+      <li><a href="#ch9">Translation as Structural Disclosure</a></li>
+      <li><a href="#ch10">Semantic Exhaustion</a></li>
+      <li><a href="#ch11">The Repeatable Recovery Procedure</a></li>
+      <li><a href="#ch12">Neighboring Landings</a></li>
+      <li><a href="#part-iv">Part IV — Traversal and Mathematical Evidence</a></li>
+      <li><a href="#ch13">The Theorem as Traversal</a></li>
+      <li><a href="#ch14">Result-Survivor and Path-Survivor</a></li>
+      <li><a href="#ch15">The Eleven Movements</a></li>
+      <li><a href="#ch16">The 615-Theorem Corpus</a></li>
+      <li><a href="#part-v">Part V — Language, History, and Shared Reality</a></li>
+      <li><a href="#ch17">Language Riding on Completion</a></li>
+      <li><a href="#ch18">Intersubjectivity and Translation</a></li>
+      <li><a href="#ch19">Institutions, Archives, and Civilisation</a></li>
+      <li><a href="#part-vi">Part VI — Reflexive Recognition</a></li>
+      <li><a href="#ch20">When the Manifold Becomes Known</a></li>
+      <li><a href="#ch21">Toward a Science of Completed Intelligibility</a></li>
+      <li><a href="#appendices">Appendices</a></li>
+    </ol>
+  </nav>
+
+  <section id="part-i" class="part">
+    <header>
+      <div class="part-number">Part I</div>
+      <h2>The Ontological Problem</h2>
+      <p>This part establishes the object of the monograph: completed intelligibility as a constitutive event rather than a merely linguistic or psychological occurrence.</p>
+    </header>
+
+    <article id="ch1" class="chapter">
+      <div class="chapter-label">Chapter 1</div>
+      <h3>The Unnoticed Operation of Completion <span class="status seeded">Seeded</span></h3>
+      <div class="chapter-goals">
+        <div><strong>Central question</strong>How can a structure govern intelligibility without becoming an object of ordinary awareness?</div>
+        <div><strong>Governing claim</strong>Operation does not require explicit recognition.</div>
+        <div><strong>Primary evidence</strong>Ordinary language, proof, translation, institutions, and the mathematical corpus.</div>
+      </div>
+      <div class="seed-box">
+        <strong>Opening thesis:</strong>
+        Human beings may have enacted a finite geometry of completed intelligibility throughout the history of language and thought without possessing an explicit representation of the field they were using.
+      </div>
+      <div class="placeholder-box">
+        <strong>Develop:</strong> enactment, sensitivity, local recognition, theoretical understanding, tacit participation, and the distinction between subconscious processing and structural operation.
+      </div>
+    </article>
+
+    <article id="ch2" class="chapter">
+      <div class="chapter-label">Chapter 2</div>
+      <h3>The Sentence as Completed Settlement <span class="status seeded">Seeded</span></h3>
+      <div class="chapter-goals">
+        <div><strong>Central question</strong>What exactly lands when a sentence becomes intelligible?</div>
+        <div><strong>Governing claim</strong>A sentence is a language-specific realization of a completed settlement.</div>
+        <div><strong>Key distinction</strong>Linguistic surface versus completed intelligibility.</div>
+      </div>
+      <figure>
+        <pre>specific X-pressure
+→ answering movement
+→ completed Y
+→ settlement topology
+→ survivor persistence</pre>
+        <figcaption>The primitive structure of one completed intelligibility.</figcaption>
+      </figure>
+      <div class="placeholder-box">
+        <strong>Develop:</strong> sentence packet individuation, fragments, complex sentences, false but complete sentences, and the distinction between grammatical ending and structural completion.
+      </div>
+    </article>
+
+    <article id="ch3" class="chapter">
+      <div class="chapter-label">Chapter 3</div>
+      <h3>X, Answering Movement, and Y <span class="status placeholder">Placeholder</span></h3>
+      <div class="chapter-goals">
+        <div><strong>Central question</strong>What makes the transition from insufficiency to settlement determinate?</div>
+        <div><strong>Governing claim</strong>X is a specific pressure, not a blank; Y is a completed landing, not merely a fact.</div>
+        <div><strong>Methodological role</strong>Prepares the positive recovery procedure.</div>
+      </div>
+      <div class="placeholder-box">
+        <strong>Include:</strong> types of X-pressure, local versus inherited X, movement as work, Y as sufficient local closure, continuation after completion, and inheritance pressure.
+      </div>
+    </article>
+  </section>
+
+  <section id="part-ii" class="part">
+    <header>
+      <div class="part-number">Part II</div>
+      <h2>The Finite Manifold</h2>
+      <p>This part derives and specifies the 6 × 3 × 3 field and defends the claim that the resulting fifty-four coordinates are pairwise discrete forms of completion rather than meanings.</p>
+    </header>
+
+    <article id="ch4" class="chapter">
+      <div class="chapter-label">Chapter 4</div>
+      <h3>The Six Work-Families <span class="status placeholder">Placeholder</span></h3>
+      <div class="placeholder-box">
+        <strong>Required sections:</strong> Distinction, Expansion, Relation, Correction, Integration, Rest; positive identity conditions; characteristic X-pressure; characteristic movement; characteristic Y; cross-family contrasts.
+      </div>
+    </article>
+
+    <article id="ch5" class="chapter">
+      <div class="chapter-label">Chapter 5</div>
+      <h3>The Three Settlement Orientations <span class="status placeholder">Placeholder</span></h3>
+      <div class="placeholder-box">
+        <strong>Required sections:</strong> Toward as focal return, Across as constitutive plurality, Away as release from a prior governor; topological rather than spatial interpretation; neighboring tests.
+      </div>
+    </article>
+
+    <article id="ch6" class="chapter">
+      <div class="chapter-label">Chapter 6</div>
+      <h3>The Three Survivor-Modes <span class="status placeholder">Placeholder</span></h3>
+      <div class="placeholder-box">
+        <strong>Required sections:</strong> Is as standing, With as bearing-bound persistence, Does as accomplished capacity or effect; survivor as structured availability; relation to tense, aspect, and grammar without reduction to them.
+      </div>
+    </article>
+
+    <article id="ch7" class="chapter">
+      <div class="chapter-label">Chapter 7</div>
+      <h3>The Fifty-Four Coordinates <span class="status seeded">Seeded</span></h3>
+      <figure class="definition">
+        <pre>6 work-families
+×
+3 settlement orientations
+×
+3 survivor-modes
+=
+54 pairwise discrete completion forms</pre>
+      </figure>
+      <div class="placeholder-box">
+        <strong>Insert full specification:</strong> cell number, code, name, X-pressure, answering movement, Y, orientation, survivor, neighboring contrasts, and one worked example for each coordinate.
+      </div>
+    </article>
+
+    <article id="ch8" class="chapter">
+      <div class="chapter-label">Chapter 8</div>
+      <h3>Pairwise Discreteness and Exact-One Placement <span class="status placeholder">Placeholder</span></h3>
+      <div class="chapter-goals">
+        <div><strong>Central issue</strong>How is each coordinate positively distinct from every other coordinate?</div>
+        <div><strong>Formal burden</strong>1,431 unordered coordinate comparisons.</div>
+        <div><strong>Safeguard</strong>Exact-one only for properly individuated completed sentence packets.</div>
+      </div>
+      <div class="placeholder-box">
+        <strong>Develop:</strong> structural versus verbal identity, exhaustive contrasts, ambiguity, nested settlements, non-placement, and ontological versus epistemic indeterminacy.
+      </div>
+    </article>
+  </section>
+
+  <section id="part-iii" class="part">
+    <header>
+      <div class="part-number">Part III</div>
+      <h2>Recovery and Method</h2>
+      <p>This part operationalizes the ontology and presents a repeatable procedure for moving from linguistic realization to coordinate.</p>
+    </header>
+
+    <article id="ch9" class="chapter">
+      <div class="chapter-label">Chapter 9</div>
+      <h3>Translation as Structural Disclosure <span class="status placeholder">Placeholder</span></h3>
+      <div class="placeholder-box">
+        <strong>Develop:</strong> multilingual realization, invariance through variation, translation as controlled perturbation, independent translation, risks of normalization, and structural fidelity.
+      </div>
+    </article>
+
+    <article id="ch10" class="chapter">
+      <div class="chapter-label">Chapter 10</div>
+      <h3>Semantic Exhaustion <span class="status placeholder">Placeholder</span></h3>
+      <div class="placeholder-box">
+        <strong>Develop:</strong> material commitment, ordinary-language reconstruction, coverage test, necessity test, exclusions, relation to paraphrase, and limits of exhaustion.
+      </div>
+    </article>
+
+    <article id="ch11" class="chapter">
+      <div class="chapter-label">Chapter 11</div>
+      <h3>The Repeatable Recovery Procedure <span class="status seeded">Seeded</span></h3>
+      <figure>
+        <pre>source sentence
+→ translation wrapper
+→ ten-language realization group
+→ semantic exhaustion
+→ X-pressure
+→ answering movement
+→ completed Y
+→ work-family
+→ orientation
+→ survivor-mode
+→ coordinate
+→ full-cell confirmation</pre>
+      </figure>
+      <div class="placeholder-box">
+        <strong>Insert:</strong> formal protocol, analyst record template, confidence notation, adjudication procedure, withholding rules, revision history, and replication standards.
+      </div>
+    </article>
+
+    <article id="ch12" class="chapter">
+      <div class="chapter-label">Chapter 12</div>
+      <h3>Neighboring Landings <span class="status seeded">Seeded</span></h3>
+      <blockquote>
+        The door closed.<br>
+        The door is closed.
+      </blockquote>
+      <table>
+        <thead>
+          <tr><th>Sentence</th><th>Coordinate</th><th>Structural difference</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>The door closed.</td><td>Rest / Toward / Does</td><td>Accomplished transition</td></tr>
+          <tr><td>The door is closed.</td><td>Rest / Toward / Is</td><td>Standing result</td></tr>
+        </tbody>
+      </table>
+      <div class="placeholder-box">
+        <strong>Add:</strong> legal, scientific, mathematical, historical, and ordinary-language minimal pairs; analyst comparison; cases in which coordinate identity remains the same despite large surface variation.
+      </div>
+    </article>
+  </section>
+
+  <section id="part-iv" class="part">
+    <header>
+      <div class="part-number">Part IV</div>
+      <h2>Traversal and Mathematical Evidence</h2>
+      <p>This part moves from local settlements to proof composition, movement-scale development, and the large corpus through which the theory is being tested.</p>
+    </header>
+
+    <article id="ch13" class="chapter">
+      <div class="chapter-label">Chapter 13</div>
+      <h3>The Theorem as Traversal <span class="status seeded">Seeded</span></h3>
+      <figure class="definition">
+        <pre>claim
+→ inherited pressure
+→ ordered local settlements
+→ decisive integration
+→ terminal Rest
+→ theorem survivor</pre>
+      </figure>
+      <div class="placeholder-box">
+        <strong>Develop:</strong> theorem as natural experimental unit, coordinate sequence versus dependency traversal, proof order, broken traversals, terminal behavior, and repeated theorem architectures.
+      </div>
+    </article>
+
+    <article id="ch14" class="chapter">
+      <div class="chapter-label">Chapter 14</div>
+      <h3>Result-Survivor and Path-Survivor <span class="status seeded">Seeded</span></h3>
+      <div class="placeholder-box">
+        <strong>Develop:</strong> result compression, proof preservation, reconstruction, transmission, explanation, repair, multiple proofs of one theorem, and path loss.
+      </div>
+    </article>
+
+    <article id="ch15" class="chapter">
+      <div class="chapter-label">Chapter 15</div>
+      <h3>The Eleven Movements <span class="status placeholder">Placeholder</span></h3>
+      <div class="placeholder-box">
+        <strong>Insert exact movement architecture:</strong> names, theorem ranges, inherited field, developmental pressure, new carrier, principal transformations, movement survivor, and transition to the next movement.
+      </div>
+      <figure>
+        <pre>constructional action
+→ field structure
+→ native coordinates
+→ measure
+→ symbolic record
+→ algebraic relation
+→ later mathematical organization</pre>
+        <figcaption>Schematic carrier development; replace with exact movement descriptions.</figcaption>
+      </figure>
+    </article>
+
+    <article id="ch16" class="chapter">
+      <div class="chapter-label">Chapter 16</div>
+      <h3>The 615-Theorem Corpus <span class="status placeholder">Placeholder</span></h3>
+      <div class="chapter-goals">
+        <div><strong>Scale</strong>615 theorems and many thousands of sentences.</div>
+        <div><strong>Continuity</strong>Dependency order across eleven movements.</div>
+        <div><strong>Research role</strong>Sustained test rather than illustrative archive.</div>
+      </div>
+      <div class="placeholder-box">
+        <strong>Develop:</strong> corpus design, sentence records, theorem maps, coordinate recurrence, rare forms, movement distributions, terminal behavior, inter-rater procedures, withheld cases, prediction, and limits of frequency.
+      </div>
+    </article>
+  </section>
+
+  <section id="part-v" class="part">
+    <header>
+      <div class="part-number">Part V</div>
+      <h2>Language, History, and Shared Reality</h2>
+      <p>This part extends the local ontology into language, public inheritance, social institutions, and civilisation.</p>
+    </header>
+
+    <article id="ch17" class="chapter">
+      <div class="chapter-label">Chapter 17</div>
+      <h3>Language Riding on Completion <span class="status placeholder">Placeholder</span></h3>
+      <div class="placeholder-box">
+        <strong>Develop:</strong> language as realization rather than origin, linguistic diversity, relation to grammar and semantics, non-linguistic intelligibility, and the limits of the claim.
+      </div>
+    </article>
+
+    <article id="ch18" class="chapter">
+      <div class="chapter-label">Chapter 18</div>
+      <h3>Intersubjectivity and Translation <span class="status placeholder">Placeholder</span></h3>
+      <div class="placeholder-box">
+        <strong>Develop:</strong> recoverable constraint across subjects, translation as re-instantiation, shared reality without identical inner representation, disagreement, and structural drift.
+      </div>
+    </article>
+
+    <article id="ch19" class="chapter">
+      <div class="chapter-label">Chapter 19</div>
+      <h3>Institutions, Archives, and Civilisation <span class="status seeded">Seeded</span></h3>
+      <figure class="definition">
+        <pre>completed intelligibility
+→ survivor
+→ public carrier
+→ institutional preservation
+→ later recovery
+→ shared reality</pre>
+      </figure>
+      <div class="placeholder-box">
+        <strong>Develop:</strong> law, science, education, archives, social ontology, institutional authority, public disagreement, civilisational path loss, and civilisation as accumulated recoverability.
+      </div>
+    </article>
+  </section>
+
+  <section id="part-vi" class="part">
+    <header>
+      <div class="part-number">Part VI</div>
+      <h2>Reflexive Recognition</h2>
+      <p>This part addresses the historical meaning of a constitutive structure becoming explicitly available to the beings through whom it operates.</p>
+    </header>
+
+    <article id="ch20" class="chapter">
+      <div class="chapter-label">Chapter 20</div>
+      <h3>When the Manifold Becomes Known <span class="status seeded">Seeded</span></h3>
+      <blockquote>
+        A structure that previously operated through human beings without requiring explicit representation becomes available to human beings as an object of representation.
+      </blockquote>
+      <div class="placeholder-box">
+        <strong>Develop:</strong> anonymous operation, reflexive availability, explicit survivor, founder-independent preservation, recognition versus acceptance, fragmentation risk, and historical timescales.
+      </div>
+    </article>
+
+    <article id="ch21" class="chapter">
+      <div class="chapter-label">Chapter 21</div>
+      <h3>Toward a Science of Completed Intelligibility <span class="status placeholder">Placeholder</span></h3>
+      <div class="chapter-goals">
+        <div><strong>Research aim</strong>Turn the ontology into a cumulative, testable programme.</div>
+        <div><strong>Methods</strong>Multilingual recovery, corpus analysis, traversal mapping, comparative studies.</div>
+        <div><strong>Applications</strong>Education, AI, translation, archives, law, institutional memory.</div>
+      </div>
+      <div class="placeholder-box">
+        <strong>Conclude with:</strong> open questions, falsification conditions, replication agenda, cross-domain corpora, formalization strategy, publication programme, and long-term institutional form.
+      </div>
+    </article>
+  </section>
+
+  <section id="appendices" class="part">
+    <header>
+      <div class="part-number">Appendices</div>
+      <h2>Reference Architecture</h2>
+    </header>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Appendix</th>
+          <th>Contents</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A</td>
+          <td>Complete fifty-four-coordinate specification</td>
+          <td>To insert</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>Pairwise discreteness matrix: 1,431 comparisons</td>
+          <td>To construct</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>Translation wrapper and multilingual protocol</td>
+          <td>Partially available</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>Semantic exhaustion template</td>
+          <td>To formalize</td>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>Sentence recovery record schema</td>
+          <td>To formalize</td>
+        </tr>
+        <tr>
+          <td>F</td>
+          <td>Theorem traversal record schema</td>
+          <td>To formalize</td>
+        </tr>
+        <tr>
+          <td>G</td>
+          <td>Eleven movement descriptions and theorem ranges</td>
+          <td>To insert</td>
+        </tr>
+        <tr>
+          <td>H</td>
+          <td>615-theorem corpus index</td>
+          <td>To compile</td>
+        </tr>
+        <tr>
+          <td>I</td>
+          <td>Inter-rater and adjudication protocol</td>
+          <td>To design</td>
+        </tr>
+        <tr>
+          <td>J</td>
+          <td>Glossary of canonical terms</td>
+          <td>To compile</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="editorial-plan" class="part">
+    <header>
+      <div class="part-number">Editorial Plan</div>
+      <h2>Suggested Writing Order</h2>
+    </header>
+
+    <ol>
+      <li>Lock the canonical glossary and formal notation.</li>
+      <li>Insert the complete fifty-four-coordinate specification.</li>
+      <li>Write Part I in final prose.</li>
+      <li>Write Part II alongside the pairwise discreteness appendix.</li>
+      <li>Formalize the recovery protocol and analyst record schema.</li>
+      <li>Insert theorem-scale examples and movement descriptions.</li>
+      <li>Develop the corpus evidence chapters after sufficient coding is complete.</li>
+      <li>Write the historical and interdisciplinary parts last, once the technical core is stable.</li>
+      <li>Complete the abstract, preface, introduction, and conclusion after the manuscript’s final architecture is settled.</li>
+    </ol>
+
+    <aside class="editorial">
+      <strong>Editorial principle:</strong>
+      Every major claim should be accompanied by one of four things: a definition, a derivation, a worked example, or an explicit statement of evidential status.
+    </aside>
+  </section>
+
+  <footer>
+    <p><strong>Working document:</strong> This HTML file is a canonical scaffold, not the completed monograph. Placeholder sections are intentionally visible so the manuscript can be expanded without losing its architecture.</p>
+  </footer>
+</main>
+</body>
+</html>

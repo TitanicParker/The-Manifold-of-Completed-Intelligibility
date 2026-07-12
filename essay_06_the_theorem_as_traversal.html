@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Essay 6 — The Theorem as Traversal</title>
+  <meta name="description" content="Essay 6 in a ten-part series on the manifold of completed intelligibility.">
+  <style>
+    :root {
+      --max-width: 940px;
+      --text: #1d1d1f;
+      --muted: #5f6368;
+      --rule: #d9dce1;
+      --panel: #f6f7f8;
+      --accent: #263a63;
+      --soft: #fbfbfc;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.72;
+    }
+    article {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+    header {
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 2rem;
+      margin-bottom: 2.25rem;
+    }
+    .series {
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    h1, h2, h3 {
+      line-height: 1.22;
+      color: var(--accent);
+    }
+    h1 {
+      font-size: clamp(2.3rem, 6vw, 4.2rem);
+      margin: 0 0 0.5rem;
+    }
+    .subtitle {
+      font-size: 1.25rem;
+      color: var(--muted);
+      margin: 0;
+    }
+    h2 {
+      margin-top: 3rem;
+      font-size: 1.85rem;
+    }
+    h3 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+    }
+    p { margin: 1rem 0; }
+    nav {
+      margin: 0 0 2rem;
+      padding: 0.85rem 1rem;
+      background: var(--panel);
+      border: 1px solid var(--rule);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+    }
+    blockquote {
+      margin: 2rem 0;
+      padding: 1rem 1.25rem;
+      border-left: 4px solid var(--accent);
+      background: var(--panel);
+      font-size: 1.08rem;
+    }
+    figure {
+      margin: 2rem 0;
+      padding: 1.25rem;
+      background: var(--panel);
+      border: 1px solid var(--rule);
+    }
+    figcaption {
+      margin-top: 0.75rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font-family: "Courier New", Courier, monospace;
+      line-height: 1.55;
+      margin: 0;
+    }
+    aside {
+      margin: 2rem 0;
+      padding: 1.25rem;
+      border: 1px solid var(--rule);
+      background: var(--soft);
+    }
+    aside h3 { margin-top: 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      font-size: 0.92rem;
+    }
+    th, td {
+      border: 1px solid var(--rule);
+      padding: 0.72rem;
+      vertical-align: top;
+      text-align: left;
+    }
+    th {
+      background: var(--panel);
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.86rem;
+    }
+    ul, ol { padding-left: 1.3rem; }
+    li { margin: 0.45rem 0; }
+    .definition {
+      border: 2px solid var(--accent);
+      background: #fff;
+    }
+    .theorem-card {
+      border: 1px solid var(--rule);
+      background: var(--soft);
+      padding: 1.25rem;
+      margin: 2rem 0;
+    }
+    .theorem-card h3 { margin-top: 0; }
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+    }
+    .next {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+<article>
+  <header>
+    <div class="series">The Manifold of Completed Intelligibility · Essay 6 of 10</div>
+    <h1>The Theorem as Traversal</h1>
+    <p class="subtitle">How local settlements compose into proof, how proof leaves a path, and why a theorem is more than its conclusion</p>
+  </header>
+
+  <nav aria-label="Essay navigation">
+    <strong>Series movement:</strong>
+    Essay 5 distinguished neighboring local settlements.
+    This essay shows how such settlements compose into theorem-scale traversal.
+    Essay 7 will examine the eleven movements of the full mathematical derivation.
+  </nav>
+
+  <section id="more-than-list">
+    <h2>1. A theorem is not a list of true sentences</h2>
+
+    <p>A proof may contain only true sentences and still fail to prove anything if those sentences are not ordered by dependency. Truth alone does not create traversal.</p>
+
+    <p>A theorem has a path. It begins from inherited conditions, moves through local completions, preserves intermediate results, and reaches a terminal settlement. Each sentence does not merely add information. It changes what later sentences are permitted or required to do.</p>
+
+    <blockquote>
+      A theorem is a dependency-ordered traversal of completed intelligibilities that produces a portable result and, when adequately preserved, a recoverable route.
+    </blockquote>
+
+    <p>This definition introduces a level of structure distinct from the coordinate of any individual sentence. A sentence has one local completion form. A theorem contains many local settlements whose survivors constrain one another.</p>
+  </section>
+
+  <section id="local-global">
+    <h2>2. Local settlement and theorem traversal</h2>
+
+    <p>The local unit remains:</p>
+
+    <figure>
+      <pre>specific X-pressure
+→ answering movement
+→ completed Y
+→ orientation
+→ survivor</pre>
+    </figure>
+
+    <p>The theorem-scale unit is different:</p>
+
+    <figure class="definition">
+      <pre>claim
+→ inherited opening
+→ ordered local settlements
+→ decisive integration
+→ terminal Rest
+→ theorem survivor</pre>
+      <figcaption>The recurrent theorem architecture under examination.</figcaption>
+    </figure>
+
+    <p>The distinction must remain exact.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Level</th>
+          <th>Primary object</th>
+          <th>Primary question</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sentence</td>
+          <td>Local settlement</td>
+          <td>How does this intelligibility land?</td>
+        </tr>
+        <tr>
+          <td>Proof sequence</td>
+          <td>Ordered settlements</td>
+          <td>How does one survivor constrain the next opening?</td>
+        </tr>
+        <tr>
+          <td>Theorem</td>
+          <td>Completed traversal</td>
+          <td>What result and route become portable?</td>
+        </tr>
+        <tr>
+          <td>Movement</td>
+          <td>Developmental region</td>
+          <td>How do theorem survivors reorganize the mathematical carrier?</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="inheritance">
+    <h2>3. Survivor inheritance is the connective tissue</h2>
+
+    <p>A traversal exists when the survivor of an earlier settlement non-arbitrarily constrains a later X-pressure.</p>
+
+    <p>Suppose one sentence establishes a distinction. A later sentence may then relate the distinguished terms. That relation could not have been formed in the same way before the distinction survived.</p>
+
+    <figure>
+      <pre>settlement₁
+→ survivor₁
+→ inherited X₂
+→ settlement₂
+→ survivor₂
+→ inherited X₃
+→ settlement₃</pre>
+    </figure>
+
+    <p>The dependency is non-arbitrary when removing or altering survivor₁ changes what settlement₂ can intelligibly perform.</p>
+
+    <p>Inheritance can be:</p>
+
+    <ul>
+      <li>inferential;</li>
+      <li>definitional;</li>
+      <li>constructional;</li>
+      <li>causal;</li>
+      <li>evidential;</li>
+      <li>procedural;</li>
+      <li>or role-constituting.</li>
+    </ul>
+
+    <p>A theorem may contain several kinds at once.</p>
+  </section>
+
+  <section id="result-path">
+    <h2>4. Result-survivor and path-survivor</h2>
+
+    <p>The distinction between result and path is central.</p>
+
+    <h3>Result-survivor</h3>
+    <p>The result-survivor preserves what was completed. In mathematics, this is commonly the theorem statement or a concise formulation of the proven result.</p>
+
+    <h3>Path-survivor</h3>
+    <p>The path-survivor preserves how the result can be reached, justified, reconstructed, taught, audited, or extended.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>What is preserved?</th>
+          <th>Result-survivor</th>
+          <th>Path-survivor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Conclusion</td>
+          <td>Yes</td>
+          <td>Yes, in context</td>
+        </tr>
+        <tr>
+          <td>Dependency order</td>
+          <td>Usually no</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Reconstruction</td>
+          <td>Limited</td>
+          <td>Enabled</td>
+        </tr>
+        <tr>
+          <td>Independent verification</td>
+          <td>Limited</td>
+          <td>Enabled</td>
+        </tr>
+        <tr>
+          <td>Teaching the result</td>
+          <td>Possible as assertion</td>
+          <td>Possible as re-achievement</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>A civilisation can preserve results while losing routes. A mathematical community may know that a theorem is true while few can reconstruct its proof. The result remains available, but its path-survivor weakens.</p>
+  </section>
+
+  <section id="theorem-unit">
+    <h2>5. Why the theorem is the ideal intermediate unit</h2>
+
+    <p>The individual sentence is too local to display full composition. The entire 615-theorem derivation is too large to inspect all at once. The theorem sits between them.</p>
+
+    <p>Each theorem typically contains:</p>
+
+    <ul>
+      <li>an announced claim;</li>
+      <li>an inherited opening;</li>
+      <li>a sequence of proof sentences;</li>
+      <li>intermediate settlements;</li>
+      <li>dependencies among survivors;</li>
+      <li>a terminal proof settlement;</li>
+      <li>and a portable theorem result.</li>
+    </ul>
+
+    <p>This repeated architecture makes the theorem a natural experimental unit. It permits comparison across hundreds of instances without flattening the local sentences or losing the larger path.</p>
+  </section>
+
+  <section id="worked-theorem">
+    <h2>6. A worked theorem traversal</h2>
+
+    <p>Consider the theorem:</p>
+
+    <blockquote>
+      The completed-intelligibility field is an anonymous, constitutive, historical, intersubjective, and generative manifold.
+    </blockquote>
+
+    <p>Its proof can be represented through eight sentence-level settlements.</p>
+
+    <div class="theorem-card">
+      <h3>Sentence 1 — Claim</h3>
+      <p>The field is presented as one manifold bearing five determinations.</p>
+      <pre>Integration / Across / Is
+IN-AC-IS
+Cell 40 — Role Array</pre>
+    </div>
+
+    <div class="theorem-card">
+      <h3>Sentence 2 — Anonymity</h3>
+      <p>Operation without required recognition is established as the ground of anonymity.</p>
+      <pre>Relation / Toward / With
+RE-TO-WI
+Cell 20 — Pivoted Balance</pre>
+    </div>
+
+    <div class="theorem-card">
+      <h3>Sentence 3 — Constitutiveness</h3>
+      <p>The field is placed inside the making of completion itself.</p>
+      <pre>Integration / Toward / With
+IN-TO-WI
+Cell 38 — Frame-Bound Whole</pre>
+    </div>
+
+    <div class="theorem-card">
+      <h3>Sentence 4 — Manifold structure</h3>
+      <p>The fifty-four pairwise discrete event-forms are organized as the field’s internal constituents.</p>
+      <pre>Integration / Across / With
+IN-AC-WI
+Cell 41 — Span-Bound Interlock</pre>
+    </div>
+
+    <div class="theorem-card">
+      <h3>Sentence 5 — Historicity</h3>
+      <p>Survival of products is established as the ground of historical character.</p>
+      <pre>Relation / Toward / With
+RE-TO-WI
+Cell 20 — Pivoted Balance</pre>
+    </div>
+
+    <div class="theorem-card">
+      <h3>Sentence 6 — Intersubjectivity</h3>
+      <p>Survivors are shown to be recoverable across subjects.</p>
+      <pre>Relation / Across / With
+RE-AC-WI
+Cell 23 — Reciprocal Shift</pre>
+    </div>
+
+    <div class="theorem-card">
+      <h3>Sentence 7 — Generativity</h3>
+      <p>Recursive inheritance and indefinite composition establish the field’s productive capacity.</p>
+      <pre>Expansion / Across / Does
+EX-AC-DO
+Cell 15 — Field Distribution</pre>
+    </div>
+
+    <div class="theorem-card">
+      <h3>Sentence 8 — Conclusion</h3>
+      <p>The proof returns to the announced claim and discharges the remaining proof demand.</p>
+      <pre>Rest / Toward / Does
+CL-TO-DO
+Cell 48 — Path Completion</pre>
+    </div>
+  </section>
+
+  <section id="sequence">
+    <h2>7. The coordinate sequence is not yet the traversal</h2>
+
+    <p>The local sequence can be written:</p>
+
+    <figure>
+      <pre>IN-AC-IS
+→ RE-TO-WI
+→ IN-TO-WI
+→ IN-AC-WI
+→ RE-TO-WI
+→ RE-AC-WI
+→ EX-AC-DO
+→ CL-TO-DO</pre>
+    </figure>
+
+    <p>But a bare coordinate sequence omits the dependency content. The traversal is not merely one cell after another. It is the ordered transformation by which each survivor becomes available to the next sentence.</p>
+
+    <figure class="definition">
+      <pre>fivefold manifold announced
+→ anonymity grounded
+→ constitutiveness grounded
+→ manifold structure established
+→ historicity grounded
+→ intersubjectivity grounded
+→ generativity grounded
+→ theorem returned as proven</pre>
+    </figure>
+
+    <p>The coordinate sequence records local form. The traversal statement records inherited intelligibility. Both are required.</p>
+  </section>
+
+  <section id="dominance">
+    <h2>8. Dominant patterns within a theorem</h2>
+
+    <p>The worked theorem is dominated by Relation and Integration.</p>
+
+    <p>Relation establishes explanatory bearings: operation without recognition grounds anonymity; survivor persistence grounds historicity; cross-subject recovery grounds intersubjectivity.</p>
+
+    <p>Integration places determinations within wholes: the fivefold characterization, constitutive placement within completion, and the organization of fifty-four forms as one manifold.</p>
+
+    <p>With is the dominant survivor-mode because most sentences preserve an attribution together with the reason or dependency that makes it intelligible.</p>
+
+    <p>Does appears when the theorem establishes operating capacity and terminal accomplishment.</p>
+
+    <p>These patterns are not assigned to the theorem in advance. They emerge from sentence-level recovery and can be compared across many theorem instances.</p>
+  </section>
+
+  <section id="terminal-rest">
+    <h2>9. Terminal Rest and proof completion</h2>
+
+    <p>Many theorem traversals culminate in Rest because the proof begins under a live demand: the announced claim remains to be established.</p>
+
+    <p>The terminal sentence discharges that demand by returning the accumulated path to the claim.</p>
+
+    <figure>
+      <pre>open proof obligation
+→ ordered settlements
+→ claim established
+→ no further proof step required under this obligation</pre>
+    </figure>
+
+    <p>This does not mean every sentence containing “therefore” is Rest, nor that every proof conclusion must occupy Cell 48. The exact orientation and survivor-mode depend on what the conclusion preserves.</p>
+
+    <p>But theorem-scale analysis can investigate whether terminal Rest forms recur systematically and whether different theorem types show different terminal coordinates.</p>
+  </section>
+
+  <section id="proof-order">
+    <h2>10. Why order matters</h2>
+
+    <p>Two proofs may contain the same local sentences but differ in validity or intelligibility because the order of inheritance differs.</p>
+
+    <p>If a relation is used before it has been established, the later sentence lacks its required opening. If a definition appears after a dependent inference, the path is broken even if all sentences are individually true.</p>
+
+    <p>Traversal identity therefore includes dependency order.</p>
+
+    <blockquote>
+      A proof is not defined only by what settlements it contains, but by the order in which their survivors become available.
+    </blockquote>
+
+    <p>This gives the theory a way to distinguish:</p>
+
+    <ul>
+      <li>a proof from a list;</li>
+      <li>an explanation from a collection of facts;</li>
+      <li>a procedure from a set of instructions;</li>
+      <li>and a narrative from an unordered inventory of events.</li>
+    </ul>
+  </section>
+
+  <section id="compression">
+    <h2>11. Theorem statements as compressed survivors</h2>
+
+    <p>A theorem statement can be viewed as a compression of a completed traversal.</p>
+
+    <p>The compression is powerful because it permits later mathematics to inherit the result without replaying the full proof every time.</p>
+
+    <p>But compression creates risk. If the result-survivor is preserved while the path-survivor disappears, later users may know what can be cited without knowing why it holds or how to repair it when assumptions change.</p>
+
+    <aside>
+      <h3>Compression and opacity</h3>
+      <p>Every mature knowledge system depends on compression. The problem is not compression itself, but compression without recoverable provenance.</p>
+    </aside>
+  </section>
+
+  <section id="different-traversals">
+    <h2>12. Can different proofs establish the same theorem?</h2>
+
+    <p>Yes. Two traversals may terminate in equivalent result-survivors while preserving different paths.</p>
+
+    <p>This means theorem identity and proof identity must be distinguished.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Object</th>
+          <th>Identity condition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Theorem result</td>
+          <td>Equivalent completed claim under the relevant formal conditions.</td>
+        </tr>
+        <tr>
+          <td>Proof traversal</td>
+          <td>Dependency-ordered path of local settlements.</td>
+        </tr>
+        <tr>
+          <td>Presentation</td>
+          <td>Particular linguistic realization of the traversal.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Different proofs can therefore preserve the same result with different pedagogical, explanatory, computational, or historical value.</p>
+
+    <p>One may be shorter. Another may reveal deeper structure. A third may generalize more readily. The path-survivor matters independently of the terminal claim.</p>
+  </section>
+
+  <section id="failure">
+    <h2>13. Broken traversals</h2>
+
+    <p>A theorem attempt may fail even when its individual sentences are intelligible.</p>
+
+    <p>Failures include:</p>
+
+    <ul>
+      <li>a local survivor not supporting the next X;</li>
+      <li>an unstated dependency;</li>
+      <li>a conclusion that outruns the available path;</li>
+      <li>a premature terminal Rest;</li>
+      <li>a missing correction;</li>
+      <li>or an integration performed before its parts are available.</li>
+    </ul>
+
+    <p>Traversal analysis can therefore diagnose where proof breaks.</p>
+
+    <p>The question is not merely whether the conclusion is unsupported. It is which inheritance edge fails.</p>
+  </section>
+
+  <section id="repeat-theorems">
+    <h2>14. Repeated theorem analysis across the corpus</h2>
+
+    <p>With 615 dependency-ordered theorems, the project can compare theorem architectures at scale.</p>
+
+    <p>Possible questions include:</p>
+
+    <ul>
+      <li>Which work-families dominate theorem openings?</li>
+      <li>Which coordinates commonly appear in intermediate proof steps?</li>
+      <li>How often do terminal sentences resolve through Rest?</li>
+      <li>Do constructional theorems differ from abstract relational theorems?</li>
+      <li>Are some survivor-modes more common in definitions than consequences?</li>
+      <li>Do later movements preserve longer or denser inheritance chains?</li>
+      <li>Can recurrent traversal motifs be identified?</li>
+    </ul>
+
+    <p>Again, frequency alone will not prove the ontology. The deeper evidence lies in whether recovered local forms explain actual proof dependencies.</p>
+  </section>
+
+  <section id="theorem-history">
+    <h2>15. The theorem as a historical object</h2>
+
+    <p>A theorem is historical in more than one sense.</p>
+
+    <p>It arises at a particular point in a derivation. It inherits prior settlements. It leaves a result available to later theorems. Its proof may be shortened, reformulated, translated, or forgotten. Its conclusion may survive while its original route disappears.</p>
+
+    <p>The theorem therefore has:</p>
+
+    <ul>
+      <li>a production history;</li>
+      <li>a dependency position;</li>
+      <li>a survivor form;</li>
+      <li>and a future inheritance career.</li>
+    </ul>
+
+    <p>This makes the theorem a miniature model of public knowledge.</p>
+  </section>
+
+  <section id="movement-transition">
+    <h2>16. From theorem traversal to movement-scale development</h2>
+
+    <p>Theorem analysis reveals how local settlements compose. The next level asks how theorem survivors reorganize an entire mathematical domain.</p>
+
+    <p>The eleven movements of the original derivation are not arbitrary sections. Each marks a developmental region in which the carrier of intelligibility changes.</p>
+
+    <p>Earlier constructional operations may become field structure. Field structure may become coordinates. Coordinates may become measure. Measure may become symbolic record. Symbolic record may enter algebraic relation and later mathematical organization.</p>
+
+    <figure class="definition">
+      <pre>sentence settlement
+→ theorem traversal
+→ theorem survivor
+→ movement inheritance
+→ new mathematical carrier</pre>
+    </figure>
+
+    <p>The next essay will ask how continuity is preserved through such transformations.</p>
+  </section>
+
+  <section id="conclusion">
+    <h2>17. Proof as inherited completion</h2>
+
+    <p>The theorem is a layered structure.</p>
+
+    <p>At the local level, each sentence resolves through one completion coordinate. At the sequential level, survivors constrain later openings. At the theorem level, the ordered path discharges a proof obligation and leaves a portable result.</p>
+
+    <p>The result-survivor preserves what was proved. The path-survivor preserves how it can be reached again.</p>
+
+    <p>This distinction clarifies why knowledge can persist while understanding weakens. A community may inherit theorem statements but lose the routes that made them intelligible.</p>
+
+    <blockquote>
+      A theorem is complete not merely when its final sentence appears, but when a dependency-ordered path has converted inherited pressure into a portable survivor.
+    </blockquote>
+
+    <p>The next task is to follow such survivors across the eleven movements of the full derivation.</p>
+  </section>
+
+  <footer>
+    <p class="next"><strong>Next:</strong> Essay 7 — <em>Eleven Movements of Mathematical Availability</em></p>
+  </footer>
+</article>
+</body>
+</html>
